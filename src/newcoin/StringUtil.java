@@ -10,6 +10,7 @@ package newcoin;
  * @author marti
  */
 import java.security.MessageDigest;
+import java.security.PublicKey;
 
 public class StringUtil {
     //Applies Sha256 to a string and returns the result
@@ -29,6 +30,10 @@ public class StringUtil {
         catch(Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    static String getStringFromKey(PublicKey sender) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
